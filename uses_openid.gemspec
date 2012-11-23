@@ -5,12 +5,12 @@ require 'uses_openid/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "uses_openid"
-  gem.version       = UsesOpenid::VERSION
+  gem.version       = UsesOpenID::VERSION
   gem.authors       = ["Daniel Vandersluis"]
   gem.email         = ["dvandersluis@selfmgmt.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Adds some OpenID authentication methods to an ActiveRecord model}
+  gem.summary       = %q{Adds some OpenID authentication methods to an ActiveRecord model}
+  gem.homepage      = "https://github.com/talentnest/uses_openid"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
