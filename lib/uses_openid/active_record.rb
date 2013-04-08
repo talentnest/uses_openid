@@ -13,7 +13,7 @@ module UsesOpenID
       # Set up the has_many association
       klass.class_eval %Q{
         @identity_url_class_name = '#{klass.name}IdentityURL'
-        has_many :identity_urls, :class_name => @identity_url_class_name
+        has_many :identity_urls, :class_name => @identity_url_class_name, :dependent => :delete_all
       }
     end
 
